@@ -2,7 +2,7 @@
 noseX=0;
 noseY=0;
 function preload() {
-
+img=loadImage("https://i.postimg.cc/8CBwwJPJ/lips-imga.jpg");
 }
 
 function setup() {
@@ -22,9 +22,10 @@ function modelLoaded()
 
 function draw() {
 image(video,0,0,300,300);
-fill(255,0,0);
-stroke(255,0,0);
-circle(noseX,noseY,20);
+//fill(255,0,0);
+//stroke(255,0,0);
+//circle(noseX,noseY,20);
+image(img,noseX,noseY,30,30);
 }
 
 function take_snapshot(){    
